@@ -21,7 +21,7 @@ setMovies(data.Search);
 
   return (
     <div className="app">
-      <h1> cinemaclub</h1>
+      <a style={{ textDecoration: 'none' }} href="/"><h1> cinemaclub</h1></a>
 
       <div className="search">
         <input type="text" placeholder="Search for a movie" value={searchTerm} onChange={(evnt) => setSearchTerm(evnt.target.value)}
@@ -31,9 +31,9 @@ setMovies(data.Search);
           alt="search"
           onClick={() => searchMovies(searchTerm)}
         />
-    </div>
+      </div>
 
-    {movies?.length > 0 ? (
+      {movies?.length > 0 ? (
         <div className="container">
           {movies.map((movie) => (
             <MovieCard movie={movie} />
@@ -44,8 +44,6 @@ setMovies(data.Search);
           <h2>No movies found</h2>
         </div>
       )}
-
-   
     </div>
   );
 }
