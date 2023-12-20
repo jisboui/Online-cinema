@@ -32,3 +32,4 @@ We welcome contributions! If you'd like to contribute to this project, please fo
 6.Create a pull request
 
 Feel free to customize this README to fit your project's specifics. Include additional sections or information that might be relevant to users and contributors.# Online-cinema
+# Online-cinema
